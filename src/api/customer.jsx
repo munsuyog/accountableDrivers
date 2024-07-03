@@ -40,7 +40,6 @@ export const loginAsCustomer = async (setCurrentUser, setUserType) => {
 
         setCurrentUser(user);
         setUserType("customer");
-        console.log("Customer logged in successfully");
     } catch (error) {
         console.error("Error logging in as customer: ", error.message);
     }
@@ -86,7 +85,6 @@ export const loginAsRestaurant = async (setCurrentUser, setUserType) => {
 
         setCurrentUser(user);
         setUserType("restaurant");
-        console.log("Restaurant logged in successfully");
     } catch (error) {
         console.error("Error logging in as restaurant: ", error.message);
     }

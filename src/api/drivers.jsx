@@ -38,7 +38,6 @@ export const loginAsDriver = async (setCurrentUser) => {
         }
 
         setCurrentUser(user);
-        console.log("Driver logged in successfully");
     } catch (error) {
         console.error("Error logging in as driver: ", error.message);
     }
