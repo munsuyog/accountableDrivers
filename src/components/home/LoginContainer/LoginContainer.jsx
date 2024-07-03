@@ -3,6 +3,7 @@ import Button from "../../common/Button/Button";
 import "./LoginContainer.css";
 import { loginAsRestaurant } from "../../../api/customer";
 import { useAuth } from "../../contexts/AuthContext";
+import BgImage from '../../../assets/home-bg.jpg'
 
 const LoginContainer = () => {
     const { setCurrentUser, setUserType, loginAsCustomer, loginAsDriver } = useAuth();
@@ -34,7 +35,7 @@ const LoginContainer = () => {
     };
 
     return (
-        <div className="login_container">
+        <div className="login_container" style={{backgroundImage: `url(${BgImage})`}}>
             <h4 className="login_container_heading">
                 Welcome to <br />
                 <span>FoodDelivery</span>
