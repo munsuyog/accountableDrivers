@@ -11,8 +11,6 @@ const messagingSenderId = process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID;
 const appId = process.env.REACT_APP_FIREBASE_APP_ID;
 const measurementId = process.env.REACT_APP_FIREBASE_MEASUREMENT_ID;
 
-console.log(apiKey)
-
 const firebaseConfig = {
   apiKey: apiKey,
   authDomain: authDomain,
